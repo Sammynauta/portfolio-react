@@ -1,0 +1,204 @@
+.header {
+    background: #242424;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 80px;
+    background: black ;
+}
+
+.ladoesquerdo {
+    margin: 16px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.ladodireito {
+    display: flex;
+    margin-right: 16px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 8px;
+    list-style: none;
+    cursor: pointer;
+}
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+.nav-item:hover {
+    text-decoration: 2px #EA384D overline;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.apresenta {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.text  {
+    display: flex;
+    color: white;
+    font-size: 24px;
+    height: auto;
+    padding: 8px;
+    flex-direction: column;
+    
+}
+
+.text .button {
+    background: #EA384D;
+    width: 150px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transform: scale(1);
+    transition: 0.4s;
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    background: #c52f41;
+}
+
+.button:active {
+    transform: scale(0.94);
+}
+
+
+
+.button .fa-github {
+    margin-right: 4px;
+}
+
+.devimage {
+    position: relative;
+    width: 350px;
+    top: 20px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .header {
+        height: auto;
+    }
+}
+@media screen and (max-width: 968px) {
+    .header {
+        height: auto;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        top: 80px;
+        left: -150%;
+        height: 90vh;
+        width: 100%;
+        position: absolute;
+        opacity: 1;
+        transition: all 0.5s ease;
+        
+    }
+    .nav-menu.active {
+        background-color: white;
+        color: #141414;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 2;
+        position: fixed;
+    }
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45px;
+        text-align: center;
+    }
+    .nav-item a {
+        color: black;
+    }
+
+    .nav-item:hover {
+        width: 100%;
+        height: 45px;
+        text-align: center;
+        text-decoration: 3px #EA384D overline;
+    }
+    .devimage {
+        width: 330px;
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apresenta .text p {
+        font-size: 20px;
+    } 
+    .apresenta .text h1 {
+        font-size: 2.8rem;
+    }     
+    .devimage {
+        width: 300px;
+        top: 10px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .header {
+        height: 45vh;
+    }
+    .apresenta {
+        flex-direction: column;
+        margin-top: 0;
+        text-align: center;
+    }
+    .apresenta .text {
+        display: block;
+    }
+    .apresenta .text p {
+        font-size: 18px;
+    }
+    .apresenta .text h1 {
+        font-size: 1.8rem;
+    }  
+    .devimage {
+        width: 230px;
+        top: 50px;
+    }
+}

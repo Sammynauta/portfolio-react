@@ -1,0 +1,89 @@
+.sobre {
+    background: black;
+    color:  white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.perfil-img {
+    width: 300px;
+    border: 3px solid #EA384D;
+}
+
+.text {
+    width: 50%;
+    margin: 4px;
+}
+
+.text h1 {
+    font-size: 3rem;
+}
+
+.text p {
+    font-size: 24px;
+}
+.botoes {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.botoes .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background: #EA384D;
+    text-decoration: none;
+    color: white;
+    border: none;
+    margin: 4px;
+    border-radius: 4px;
+    font-size: 18px;
+    transform:  scale(1);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.botoes .button:hover {
+    background: #c52f41;
+}
+
+.botoes .button:active {
+    transform:  scale(0.94);
+}
+
+.botoes .button .fa-linkedin, .fa-file-download {
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+    }
+    .text {
+        text-align: center;
+        width: 70%;
+    }
+    .text h1 {
+        font-size: 2.4rem;
+    }
+    .text p {
+        font-size: 20px;
+    }
+    .botoes {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text p {
+        font-size: 18px;
+    }
+}

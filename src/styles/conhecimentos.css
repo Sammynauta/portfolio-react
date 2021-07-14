@@ -1,0 +1,57 @@
+.skills {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.Cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background: #242424;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 16px;
+    transform: scale(0.94);
+    transition: 0.3s ease;
+    cursor: pointer;
+    height: 180px;
+}
+
+.card:hover {
+    transform: scale(1);
+}
+
+.card span {
+    color: rgb(255, 255, 255);
+}
+.card p {
+    color: white;
+}
+
+.img-icon {
+    color: #EA384D;
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .Cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
