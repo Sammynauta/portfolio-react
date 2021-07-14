@@ -181,7 +181,7 @@
 }
 @media screen and (max-width: 576px) {
     .header {
-        height: 45vh;
+        height: 50vh;
     }
     .apresenta {
         flex-direction: column;
