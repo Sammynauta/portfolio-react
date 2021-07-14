@@ -4,7 +4,7 @@
 
 <hr>
 
-<img src='../assets/slide1.png'>
+<img src='src/assets/slide1.png'>
 
 ## Sobre o PROJETO
 - **PROJETO FEITO EM REACT.**
@@ -15,5 +15,4 @@
 - Conhecimentos: Nele apresento meus principais conhecimentos em algumas linguagens como o foco no front-end;
 - Contato: coloco a disposição meios de poder comunicação comigo.
 
-<img src='../assets/slide2.png'>
-
+<img src='src/assets/slide2.png'>
