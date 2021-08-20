@@ -14,7 +14,7 @@ function Sobre() {
                     Onde acabei conhecendo mais sobre programação e desenvolvimento. Desde então me apaixonei por Front-End e venho estudando e procurando aprender cada vez mais nessa área.
                 </p>
                 <div className='botoes'>
-                    <a className='button' href='https://www.linkedin.com/in/samuel-diogo-769274195/'><i className="fab fa-linkedin"></i>Linkedin</a>
+                    <a className='button' href='https://www.linkedin.com/in/samuel-oliveira-diogo/'><i className="fab fa-linkedin"></i>Linkedin</a>
                     <a className='button' href={curriculo}><i className="fas fa-file-download"></i>Curriculo</a>
                 </div>
             </div>
